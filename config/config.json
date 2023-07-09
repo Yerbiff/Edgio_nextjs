@@ -1,0 +1,28 @@
+{
+  "site": {
+    "title": "MediaFusion | Innowacyjne rozwiązania reklamowe",
+    "base_url": "/",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "200",
+    "logo_height": "38",
+    "logo_text": "MediaFusion"
+  },
+
+  "settings": {
+    "pagination": 5,
+    "summary_length": 300
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "contact_form_action": "#",
+    "copyright": "Copyright © 2023"
+  },
+
+  "metadata": {
+    "meta_author": "me",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "MediaFusion | Agencja Reklamowa"
+  }
+}
