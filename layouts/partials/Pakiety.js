@@ -1,39 +1,44 @@
-import { markdownify } from "@lib/utils/textConverter";
-import Image from "next/image";
 import Link from "next/link";
 
 const Pakiety = ({ pakiety }) => {
   return (
-    <div className="row justify-center">
+    <div class="my-14  md:px-6">
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 xl:gap-x-12">
+        
       {pakiety.map((pakiet, i) => (
-        <div className="col-12 mb-8 sm:col-6 md:col-4" key={`key-${i}`}>
-          <Link
-            href={`/cennik/${pakiet.slug}`}
-            className="block hover:text-primary"
-          >
-            {pakiet.frontmatter.image && (
-              <div className="mb-4">
-                <Image
-                  src={pakiet.frontmatter.image}
-                  alt={pakiet.frontmatter.title}
-                  height="300"
-                  width="300"
-                  className="rounded-lg"
-                />
+          <div className="mb-6 lg:mb-0 text-left" key={`key-${i}`}>
+            <div className="block h-full rounded-lg bg-gray-100 shadow-md light:bg-gray-800">
+              <div className="border-b-2 border-gray-200 border-opacity-50 p-6 text-center light:border-opacity-50">
+                <p className="mb-4 text-sm uppercase light:text-gray-200 light:text-gray-300">
+                  <strong>{pakiet.frontmatter.title}</strong>
+                </p>
+                <h3 className="mb-6 text-3xl light:text-neutral-200">
+                  <strong>{pakiet.frontmatter.price}</strong>
+                  <small className="text-base light:text-neutral-500 light:text-neutral-400">/mies</small>
+                </h3>
+                <Link href={`/cennik/${pakiet.slug}`} className="block hover:text-primary">
+                  <button type="button" className="inline-block w-full rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200" data-te-ripple-init data-te-ripple-color="light">
+                    Szczegóły
+                  </button>
+                </Link>
               </div>
-            )}
-            <h3 className="h4 mb-4">
-              
-                {pakiet.frontmatter.title}
-              
-            </h3>
-            {markdownify(pakiet.content.slice(0, 121), "p")}
-            <h5 className="h4 mt-2">
-              {pakiet.frontmatter.price}
-            </h5>
-          </Link>
-        </div>
-      ))}
+              <div className="p-6 text-align-left">
+                <ol className="list-inside">
+                  {pakiet.frontmatter.cechy.map((feature, index) => (
+                    <li key={index} className="mb-4 flex">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="mr-3 h-5 w-5 text-primary light:text-primary-400">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+          </div>
+        ))}
+
+      </div>
     </div>
   );
 };

@@ -1,13 +1,18 @@
 ---
 title: Indywidualny
-image: /images/pakiety/swatch-wrzosowy-pastelowy.jpg
 description: this is meta description
-price: Skontaktuj się
+price: '? '
+cechy:
+- Dostosowane reklamy
+- Elastyczność 
+- Kampanie na miarę
+- Szczegółowe analiza
 ---
 
 Nasz Plan Indywidualny to rozwiązanie stworzone specjalnie dla klientów, którzy mają szczególne wymagania i oczekiwania dotyczące swoich kampanii reklamowych. Oferujemy spersonalizowane podejście i elastyczność w dostosowaniu naszych usług do Twoich potrzeb. W ramach tego planu oferujemy:
 
-Indywidualne konsultacje i opracowanie strategii reklamowej dopasowanej do Twojego biznesu.
-Pełne wsparcie projektowe, w tym opracowanie identyfikacji wizualnej, projektowanie logo i materiałów marketingowych.
-Zaawansowane analizy danych i badanie rynku w celu optymalizacji strategii reklamowej.
-Pełne zarządzanie kampaniami reklamowymi w różnych kanałach, w tym kampaniami w mediach społecznościowych, kampaniami PPC i kampaniami e-mailowymi.
+Indywidualnie dostosowane strategie marketingowe i kreacje kampanii reklamowych z uwzględnieniem unikalnych celów i potrzeb klienta.
+Kompleksowe zarządzanie mediami społecznościowymi, w tym tworzenie spersonalizowanych treści, moderowanie komunikacji i analiza wyników.
+Optymalizacja strony internetowej i audyt SEO z uwzględnieniem indywidualnej branży i konkurencji.
+Elastyczność i personalizacja raportowania, aby dostosować wyniki kampanii do preferencji i celów klienta.
+Indywidualne wsparcie techniczne i dedykowany zespół do ciągłej optymalizacji i dostosowania strategii.

@@ -14,6 +14,9 @@ module.exports = {
   // routes: 'routes.js',
 
   next: {
+    server: {
+      port: 3000,
+    },
     // Output sourcemaps so that stack traces have original source filenames and line numbers when tailing
     // the logs in the Edgio developer console.
     // This config options replaces the edgioSourceMaps option in next.config.js.

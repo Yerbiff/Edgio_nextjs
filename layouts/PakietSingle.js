@@ -1,11 +1,10 @@
 import { markdownify } from "@lib/utils/textConverter";
 import shortcodes from "@shortcodes/all";
 import { MDXRemote } from "next-mdx-remote";
-import Image from "next/image";
 import Base from "./Baseof";
 
 const PakietSingle = ({ frontmatter, content, mdxContent }) => {
-  const { description, social, title, image } = frontmatter;
+  const { description, title } = frontmatter;
 
   return (
     <Base
@@ -14,18 +13,8 @@ const PakietSingle = ({ frontmatter, content, mdxContent }) => {
     >
       <section className="section ">
         <div className="container ">
-          <div className="mb-4 text-center md:px-24">
-            {image && (
-              <div className="mb-8">
-                <Image
-                  src={image}
-                  className="mx-auto rounded-lg"
-                  height="150"
-                  width="150"
-                  alt={title}
-                />
-              </div>
-            )}
+          <div className="mb-64 mt-28 text-center md:px-24">
+           
             {markdownify(title, "h1", "h2 mb-8 ")}
             <div className="content text-justify">
               <MDXRemote {...mdxContent} components={shortcodes} />

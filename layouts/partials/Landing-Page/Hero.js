@@ -1,52 +1,47 @@
-/// Page Sections
+import Image from "next/image";
+import Link from "next/link";
+import CtaButton from "../../../public/images/landing/cta-button.svg";
+import HeroImg from "../../../public/images/landing/hero-jungle.png"
+
 const Hero = () => {
+  return (
+    <div>
+      <div className="container mx-auto">
+        <div className="flex flex-col xl:px-32 items-center text-center gap-6 py-20">
+          <h1 className="font-display md:text-display-2xl text-display-lg">
+            Spraw, że <span className="italic">Twoja marka</span> rozkwitnie
+          </h1>
+          <p className="col-span-8 md:text-body-xl text-body-lg font-light text-neutral-700 max-w-[800px]">
+            Przekształcamy Twoją firmę w rozpoznawalną markę, tworząc strategie
+            marketingowe i wykorzystując skuteczne narzędzia. Realizujemy Twoje unikalne
+            pomysły, aby wprowadzić je w życie!{" "}
+          </p>
+        </div>
 
-    return (
-    <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
-        style={{
-            minHeight: "75vh"
-        }}>
-        <div className="absolute top-0 w-full h-full bg-center bg-cover"
-            style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1491951931722-5a446214b4e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=934&q=80')"
-            }}>
-            <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
+      </div>
+      <div className="relative">
+        <Image
+          src={HeroImg}
+          alt="Interior Design"
+        />
+        <Link href="/oferta">
+            <Image
+              src={CtaButton}
+              alt="Get in touch"
+              className="absolute xl:left-28 lg:left-[44%] md:left-[42%] left-[35%] -top-16"
+            />
+        </Link>
+      </div>
+      <div className="bg-neutral-900">
+      <div className="container mx-auto">
+        <div className="flex flex-row md:items-center items-start self-auto gap-5 py-6">
+  
         </div>
-        <div className="container relative mx-auto">
-            <div className="items-center flex flex-wrap">
-            <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <div className="pr-12">
-                <h1 className="text-white font-semibold text-5xl">
-                    Twoja marka, nasza pasja.
-                    </h1>
-                <p className="mt-4 text-lg text-gray-300">
-                    Wykorzystujemy najnowsze trendy i innowacyjne rozwiązania, aby pomóc Twojej marce osiągnąć sukces. Z nami Twoja historia reklamy nabierze życia i przyciągnie uwagę Twojej docelowej grupy odbiorców.
-                    </p>
-                </div>
-            </div>
-
-            </div>
-        </div>
-        <div
-            className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-            style={{ height: "70px" }}
-        >
-            <svg
-            className="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-            >
-            <polygon
-                className="text-gray-300 fill-current"
-                points="2560 0 2560 100 0 100"
-            ></polygon>
-            </svg>
-        </div>
+      </div>
     </div>
-)};
+    </div>
+    
+  );
+};
 
 export default Hero;
