@@ -11,7 +11,7 @@ const Oferta = () => {
     { name: 'Zielona Góra', nameSite: 'Zielonej Górze', slug: 'social-media-zielona-gora' },
     { name: 'Łódź', nameSite: 'Łodzi', slug: 'social-media-lodz' },
     { name: 'Kraków', nameSite: 'Krakowie', slug: 'social-media-krakow' },
-    { name: 'Warszawa', nameSite: 'Warszawaie', slug: 'social-media-warszawa' },
+    { name: 'Warszawa', nameSite: 'Warszawie', slug: 'social-media-warszawa' },
     { name: 'Opole', nameSite: 'Opolu', slug: 'social-media-opole' },
     { name: 'Rzeszów', nameSite: 'Rzeszowie', slug: 'social-media-rzeszow' },
     { name: 'Białystok', nameSite: 'Białystoku', slug: 'social-media-bialystok' },
@@ -41,7 +41,7 @@ const Oferta = () => {
                 {cities.map((city, index) => (
                   <div className="w-full" key={index}>
                     <h3 className="h6 mb-1">
-                      <Link className="block hover:text-primary" href={`oferta/${city.slug}`}>
+                      <Link className="block hover:text-primary" href={`${city.slug}`}>
                         {city.name}
                       </Link>
                     </h3>
